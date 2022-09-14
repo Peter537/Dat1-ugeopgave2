@@ -2,7 +2,7 @@ void setup() {
   int[] ints = { 4, 135, 31, 537, 8 };
   String[] strings = { "Hello", "World", "!" };
   boolean[] booleans = { true, false, false };
-  
+
   printer(strings);
   println(getTotalSum(ints));
   println(getAverage(ints));
@@ -15,16 +15,16 @@ void printer(String[] arr) {
   }
 }
 
-int getTotalSum(int[] array) {
+int getTotalSum(int[] arr) {
   int sum = 0;
-  for (int i : array) {
+  for (int i : arr) {
     sum += i;
   }
   return sum;
 }
 
-float getAverage(int[] array) {
-  return getTotalSum(array) / (float) array.length;
+float getAverage(int[] arr) {
+  return getTotalSum(arr) / (float) array.length;
 }
 
 int[] sorted(int[] arr) {
