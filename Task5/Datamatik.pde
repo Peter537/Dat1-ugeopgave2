@@ -5,7 +5,7 @@ void setup() {
   students[1] = new Student("Magnus", 21, false, "A");
   students[2] = new Student("Yusuf", 21, false, "A");
   students[3] = new Student("Mikkel", 21, false, "A");
-  students[4] = new Student("Mads", 21, false, "A");
+  students[4] = new Student("Oskar", 21, false, "A");
   students[5] = new Student("Marcus", 21, false, "A");
   students[6] = new Student("Kalle", 19, false, "A");
   students[7] = new Student("Allan", 19, false, "A");
@@ -23,13 +23,13 @@ void setup() {
   println(getStudentIndex(students, "Mikkel"));
 }
 
-String getStudentName(Student[] students, int index) {
-  return students[index].name;
+String getStudentName(Student[] array, int index) {
+  return array[index].name;
 }
 
-int getStudentIndex(Student[] students, String name) {
-  for (int i = 0; i < students.length; i++) {
-    if (students[i].name.equals(name)) {
+int getStudentIndex(Student[] array, String name) {
+  for (int i = 0; i < array.length; i++) {
+    if (array[i].name.equals(name)) {
       return i;
     }
   }
