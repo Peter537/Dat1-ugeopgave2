@@ -3,30 +3,30 @@ void setup() {
   String[] strings = { "Hello", "World", "!" };
   boolean[] booleans = { true, false, false };
 
-  printer(strings);
+  printline(strings);
   println(getTotalSum(ints));
   println(getAverage(ints));
   println(sorted(ints));
 }
 
-void printer(String[] arr) {
-  for (String s : arr) {
+void printline(String[] strings) {
+  for (String s : strings) {
     println(s);
   }
 }
-
-int getTotalSum(int[] arr) {
+  
+int getTotalSum(int[] ints) {
   int sum = 0;
-  for (int i : arr) {
+  for (int i : ints) {
     sum += i;
   }
   return sum;
 }
 
-float getAverage(int[] arr) {
-  return getTotalSum(arr) / (float) array.length;
+float getAverage(int[] ints) {
+  return getTotalSum(ints) / (float) ints.length;
 }
 
-int[] sorted(int[] arr) {
-  return sort(arr);
+int[] sorted(int[] ints) {
+  return sort(ints);
 }
