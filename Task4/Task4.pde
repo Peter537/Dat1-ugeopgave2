@@ -14,7 +14,7 @@ void printline(String[] strings) {
     println(s);
   }
 }
-  
+
 int getTotalSum(int[] ints) {
   int sum = 0;
   for (int i : ints) {
