@@ -1,17 +1,17 @@
 void setup() {
-  printer();
-  printer("Hello World!");
-  printer("Peter", 19);
+  printline();
+  printline("Hello World!");
+  printline("Peter", 19);
 }
 
-void printer() {
+void printline() {
   println("");
 }
 
-void printer(String s) {
+void printline(String s) {
   println(s);
 }
 
-void printer(String name, int age) {
+void printline(String name, int age) {
   System.out.printf("My name is %s, I am %s years old", name, age);
 }
