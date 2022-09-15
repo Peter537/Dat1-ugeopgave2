@@ -1,12 +1,9 @@
 boolean happy = true;
 
 void setup() {
-  if (iAmHappy())
-  {
+  if (iAmHappy()) {
     println("I clap my hands");
-  }
-  else
-  {
+  } else {
     println("I don't clap my hands"); 
   }
   
@@ -18,7 +15,6 @@ void setup() {
 }
 
 boolean iAmHappy(){
-  // fill out what is missing here: 
   return happy;
 }
 
