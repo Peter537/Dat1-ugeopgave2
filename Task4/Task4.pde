@@ -27,6 +27,7 @@ float getAverage(int[] ints) {
   return getTotalSum(ints) / (float) ints.length;
 }
 
+// I considered how I could write the method, and then I made it
 int[] sorted(int[] ints) {
   return sort(ints);
 }
