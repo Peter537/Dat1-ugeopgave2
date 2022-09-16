@@ -3,13 +3,13 @@ void setup() {
   String[] strings = { "Hello", "World", "!" };
   boolean[] booleans = { true, false, false };
 
-  printline(strings);
+  printStrings(strings);
   println(getTotalSum(ints));
   println(getAverage(ints));
   println(sorted(ints));
 }
 
-void printline(String[] strings) {
+void printStrings(String[] strings) {
   for (String s : strings) {
     println(s);
   }
